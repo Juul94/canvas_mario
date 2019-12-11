@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************/
+/********** STANDARD **********/
+/******************************/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-image:url('../img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Arial, "sans-serif";
+	overflow-x: hidden !important;
+}
+
+/***************************/
+/********** FONTS **********/
+/***************************/
+
+h1 {
+	font-size:45px;
+	color:#272727;
+	margin-bottom:10px;
+}
+
+h2 {
+	font-size:30px;
+	color:#272727;
+	font-weight: normal;
+}
+
+h3 {
+	margin-top:35px !important;
+	margin-bottom:0 !important;
+	background-color:#90b668;
+	color:white;
+	text-align: center;
+	padding:10px 0;
+	font-weight: normal;
+	font-size:25px !important;
+}
+
+h3.final_score {
+	margin-top:0 !important;
+	font-weight: normal !important;
+}
+
+h5 {
+	color:#90b668;
+	text-align: center;
+	font-weight: bold;
+	font-size:22px;
+	margin-bottom:10px;
+}
+
+/***************************/
+/********** CLASS **********/
+/***************************/
+
+.container {
+	width:1080px;
+	margin:100px auto;
+}
+
+.canvas_container {
+	width:506px;
+	display:inline-block;
+}
+
+.current_timer {
+	width: 245px;
+	padding:10px 20px;
+	box-sizing: border-box;
+	display:inline-block !important;
+	text-align: left;
+	font-weight: normal;
+	font-size:20px;
+	height: 55px;
+}
+
+.timer_icon {
+	width:30px;
+    vertical-align: baseline;
+}
+
+.time_current_time {
+	display: inline-block;
+	vertical-align: super;
+	margin-left:7.5px;
+}
+
+.time_recent_time {
+	display: inline-block;
+}
+
+.recent_time {
+	width: 245px;
+	padding:10px 20px;
+	box-sizing: border-box;
+	display:inline-block;
+	text-align: right;
+	font-weight: normal;
+	font-size:16px;
+	vertical-align: super;
+}
+
+.logout_btn {
+	text-decoration: none;
+	color:black;
+}
+
+.logout_btn:hover {
+	color:#ff2524;
+}
+
+.highscore_heading {
+	position: relative;
+	width: 100%;
+}
+
+.recent_time_span {
+	font-weight: bold;
+}
+
+.modal-title {
+	margin:0 auto;
+}
+
+.btn {
+	background-color:#90b668 !important;
+	border:none !important;
+}
+
+.btn:hover {
+	background-color:#668942 !important;
+}
+
+.scoreboard {
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
+
+.modal-dialog {
+	margin:11.5rem auto !important;
+}
+
+/************************/
+/********** ID **********/
+/************************/
+
+#username {
+	display:inline-block;
+	max-width: 550px;
+	margin-left:50px;
+	vertical-align: top;
+}
+
+#timer {
+	text-align: center;
+	font-size: 25px;
+	color:black;
+	font-weight: bold;
+	background-color:white;
+	width:506px;
+	margin-top:-7px;
+	box-sizing: border-box;
+}
+
+/***************************/
+/********** TABLE **********/
+/***************************/
+
+table {
+	width: 100%;
+	background-color:white;
+	border:none !important;
+	outline:none !important;
+}
+
+tr:nth-child(even) {
+	background-color: #F7F7F7;
+}
+
+th {
+	background-color:#90b668;
+	color:white;
+}
+
+td, th {
+    padding: 12.5px 22.5px !important;
+	border:none !important;
+	outline:none !important;
+}
+
+td.username {
+	text-transform: capitalize;
+}
+
+/****************************/
+/********** OTHERS **********/
+/****************************/
+
+canvas {
+	margin:0 auto;
+	border:3px solid white;
+}
+
+/*********************************/
+/********** MEDIA QUERY **********/
+/*********************************/
+
+@media only screen and (max-width: 2000px)  {
+	.container {
+		margin-left: 570px !important;
+	}
+}
+
+@media only screen and (max-width: 1700px)  {
+	
+	body {
+		background-image:url('../img/background_small.jpg');
+	}
+	
+	.container {
+		margin:50px auto !important;
+		margin-left: 460px !important;
+	}
+}
+
+
+
+
